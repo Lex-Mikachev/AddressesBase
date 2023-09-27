@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\TestTest\index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Files\test.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Models\Apartment.cs" />
+      <Compile Remove="Models\ApartmentOwner.cs" />
+      <Compile Remove="Models\ApplicatonContext.cs" />
+      <Compile Remove="Models\Building.cs" />
+      <Compile Remove="Models\Locality.cs" />
+      <Compile Remove="Models\LocalityPrefix.cs" />
+      <Compile Remove="Models\Owners.cs" />
+      <Compile Remove="Models\Street.cs" />
+      <Compile Remove="Models\StreetPrefix.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Models" />
+    </ItemGroup>
+
+</Project>
