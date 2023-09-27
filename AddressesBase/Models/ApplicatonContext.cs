@@ -4,7 +4,7 @@ using System.Linq;
 using System.Windows;
 using Microsoft.EntityFrameworkCore;
 
-namespace Addresses.Model;
+namespace AddressesBase.Models;
 
 public class ApplicationContext : DbContext
 {
@@ -172,7 +172,7 @@ public class ApplicationContext : DbContext
 
             foreach (var b in Buildings)
             {
-                int apartmentsCount = b.ApartmentsAmount;
+                int apartmentsCount = b.ApartmentAmount;
                 while (apartmentsCount > 0)
                 {
                     // Определимся с кол-вом владельцев и создадим их список,
@@ -227,7 +227,7 @@ public class ApplicationContext : DbContext
             }
             SaveChanges();
 */            
-            MessageBox.Show("DB was created!");
+            //MessageBox.Show("DB was created!");
         }
         
     }

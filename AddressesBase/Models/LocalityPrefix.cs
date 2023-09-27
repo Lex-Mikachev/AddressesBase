@@ -2,61 +2,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Addresses.Model;
+namespace AddressesBase.Models;
 
-public class LocalityPrefix : INotifyPropertyChanged
+public class LocalityPrefix
 {
-    private int _id;
-    private string _localityPrefixName = string.Empty;
-    private string _description = string.Empty;
-    private List<Locality> _localities = new();
-
-    public int Id
-    {
-        get => _id;
-        set
-        {
-            _id = value;
-            OnPropertyChanged("Id");
-        }
-    }
-
-    public string LocalityPrefixName
-    {
-        get => _localityPrefixName;
-        set
-        {
-            _localityPrefixName = value;
-            OnPropertyChanged("LocalityPrefixName");
-        }
-    }
-
-    public string Description
-    {
-        get => _description;
-        set
-        {
-            _description = value;
-            OnPropertyChanged("Description");
-        }
-    }
-
-    public List<Locality> Localities
-    {
-        get => _localities;
-        set
-        {
-            _localities = value;
-            OnPropertyChanged("Localities");
-        }
-    }
-
-    public event PropertyChangedEventHandler? PropertyChanged;
-    public void OnPropertyChanged([CallerMemberName] string prop = "")
-    {
-        if (PropertyChanged != null)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(prop));
-        }
-    }
+    public int Id { get; set; }
+    public string LocalityPrefixName { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public List<Locality> Localities { get; set; } = new();
+    
 }

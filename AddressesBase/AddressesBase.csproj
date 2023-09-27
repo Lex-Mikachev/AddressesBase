@@ -11,24 +11,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="Models\Apartment.cs" />
-      <Compile Remove="Models\ApartmentOwner.cs" />
-      <Compile Remove="Models\ApplicatonContext.cs" />
-      <Compile Remove="Models\Building.cs" />
-      <Compile Remove="Models\Locality.cs" />
-      <Compile Remove="Models\LocalityPrefix.cs" />
-      <Compile Remove="Models\Owners.cs" />
-      <Compile Remove="Models\Street.cs" />
-      <Compile Remove="Models\StreetPrefix.cs" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Models" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
       <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="Models\Locality.cs" />
     </ItemGroup>
 
 </Project>
