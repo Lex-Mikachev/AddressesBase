@@ -11,12 +11,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Files\test.txt">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Remove="Models\Apartment.cs" />
       <Compile Remove="Models\ApartmentOwner.cs" />
       <Compile Remove="Models\ApplicatonContext.cs" />
