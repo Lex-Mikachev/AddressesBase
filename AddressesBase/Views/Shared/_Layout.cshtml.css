@@ -44,5 +44,21 @@ button.accept-policy {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px;
+  line-height: 30px;
+}
+
+.table { display:table; }
+.table > * { 
+  display:table-row-group;
+  margin: 0;
+  padding: 0;
+}
+.header { display:table-header-group }
+.table > * > * { display:table-row; }
+.table > * > * > * { display:table-cell; }
+
+.tbl {
+  border-collapse: separate;
+  margin: 0;
+  padding: 0;
 }

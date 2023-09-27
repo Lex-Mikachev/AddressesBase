@@ -172,7 +172,7 @@ public class ApplicationContext : DbContext
 
             foreach (var b in Buildings)
             {
-                int apartmentsCount = b.ApartmentAmount;
+                int apartmentsCount = b.ApartmentsAmount;
                 while (apartmentsCount > 0)
                 {
                     // Определимся с кол-вом владельцев и создадим их список,
