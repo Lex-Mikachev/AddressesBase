@@ -15,8 +15,4 @@
       <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.5" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Compile Include="Models\Locality.cs" />
-    </ItemGroup>
-
 </Project>
